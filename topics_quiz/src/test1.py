@@ -26,7 +26,7 @@ def callback(msg):
 
         turn.linear.x = 0.25
         pub.publish(turn)
-        ime.sleep(0.5)
+        time.sleep(0.5)
 
         turn.linear.x = 0.1
         turn.angular.z = 1.57
