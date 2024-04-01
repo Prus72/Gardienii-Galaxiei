@@ -8,11 +8,25 @@ from geometry_msgs.msg import Twist
 def callback(msg):
     dist = msg.ranges[0]
     print(dist)
-    if dist <0.4 :
+    if dist <0.65 :
         turn.linear.x = 0
         turn.angular.z = 0
         pub.publish(turn)
         time.sleep(0.5)
+
+        turn.linear.x = 0.1
+        turn.angular.z = 1.57
+        pub.publish(turn)
+        rospy.sleep(0.125)
+
+        turn.linear.x = 0
+        turn.angular.z = 0
+        pub.publish(turn)
+        time.sleep(2)
+
+        turn.linear.x = 0.25
+        pub.publish(turn)
+        ime.sleep(0.5)
 
         turn.linear.x = 0.1
         turn.angular.z = 1.57
@@ -22,6 +36,7 @@ def callback(msg):
         turn.linear.x = 0
         turn.angular.z = 0
         pub.publish(turn)
+
     turn.linear.x = 0.25
     pub.publish(turn)
 
@@ -33,4 +48,3 @@ rate = rospy.Rate(2)
 turn = Twist()
 
 rospy.spin()
-
