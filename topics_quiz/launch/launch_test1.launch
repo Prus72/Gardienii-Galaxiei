@@ -1,0 +1,5 @@
+<launch>
+<node pkg> = "turtlebot_test1" type  = " test1.py"
+	name= " turtlebot_test1" output = "screen" >
+</node>
+</launch>
