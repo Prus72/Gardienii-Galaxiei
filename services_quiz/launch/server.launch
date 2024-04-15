@@ -1,3 +1,3 @@
 <launch>
-<node pkg="services_pkg" type= " server.py" name="simple_node" output="screeen"/>
+<node pkg="services_quiz" type="server.py" name="simple_node" output="screen"/>
 </launch>

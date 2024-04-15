@@ -1,4 +1,4 @@
-str directie
-int durata
+string directie
+int16 durata
 ---
 bool succes
