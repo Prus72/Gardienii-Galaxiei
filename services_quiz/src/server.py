@@ -16,8 +16,7 @@ def my_callback(request):
     turn = Twist()
     Duration = request.durata
     while start_time + Duration > rospy.get_time():
-        turn.linear.x = 0.1
-        turn.angular.z = 0.7* dir
+        turn.linear.y = 0.7* dir
         pub.publish(turn)
 
     turn.linear.x = 0.0
