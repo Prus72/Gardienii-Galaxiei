@@ -1,0 +1,4 @@
+str directie
+int durata
+---
+bool succes
