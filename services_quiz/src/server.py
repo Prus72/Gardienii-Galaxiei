@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 import rospy
 from datetime import datetime, timedelta
-from services_pkg.srv import ms1, ms1Response
+from services_quiz.srv import ms1, ms1Response
 from geometry_msgs.msg import Twist
 
 def my_callback(request):
