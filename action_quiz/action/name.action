@@ -1,0 +1,8 @@
+#goal
+int32 seconds
+---
+#result
+int32 pozision
+---
+#feedback
+int32[] all_pozisions
